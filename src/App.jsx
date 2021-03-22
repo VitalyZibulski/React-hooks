@@ -1,14 +1,11 @@
-import useInput from "./hooks/useInput";
+import Hover from "./components/Hover";
 
 function App() {
-  const username = useInput('');
-  const password = useInput('');
+
 
   return (
     <div>
-      <input {...username} type="text" placeholder="username"/>
-      <input {...password} type="password" placeholder="password"/>
-      <button onClick={() => console.log(username.value, password.value)}>Click</button>
+      <Hover />
     </div>
   );
 }
